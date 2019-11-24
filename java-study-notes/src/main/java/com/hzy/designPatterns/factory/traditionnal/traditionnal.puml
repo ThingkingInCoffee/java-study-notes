@@ -1,0 +1,17 @@
+@startuml
+
+abstract class Pizza
+
+OrderPizza ..> Pizza
+OrderPizza ..> PizzaPig
+OrderPizza ..> PizzaCheese
+
+PizzaPig <|-- Pizza
+PizzaCheese <|-- Pizza
+
+class OrderPizza {
+
+}
+
+
+@enduml
