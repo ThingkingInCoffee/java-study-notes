@@ -1,4 +1,4 @@
-package com.hzy.designpatterns.chainofresponsibility;
+package com.hzy.designpattern.chainofresponsibility;
 
 public class Approver01 extends Approver {
 

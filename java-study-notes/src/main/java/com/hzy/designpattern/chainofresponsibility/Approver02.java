@@ -1,14 +1,14 @@
-package com.hzy.designpatterns.chainofresponsibility;
+package com.hzy.designpattern.chainofresponsibility;
 
-public class Approver03 extends Approver {
+public class Approver02 extends Approver {
 
-    public Approver03(String name) {
+    public Approver02(String name) {
         super(name);
     }
 
     @Override
     public void dealRequest(ApprovalRequest approvalRequest) {
-        if (approvalRequest.getPrice() > 10000 && approvalRequest.getPrice() <= 30000) {
+        if (approvalRequest.getPrice() > 5000 && approvalRequest.getPrice() <= 10000) {
             System.out.println(this.name + "处理了"+approvalRequest.getId());
         } else {
             this.approver.dealRequest(approvalRequest);

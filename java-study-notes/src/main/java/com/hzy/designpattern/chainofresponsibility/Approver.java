@@ -1,4 +1,4 @@
-package com.hzy.designpatterns.chainofresponsibility;
+package com.hzy.designpattern.chainofresponsibility;
 
 /**
  * 审批人抽象类
