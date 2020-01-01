@@ -1,4 +1,4 @@
-package com.hzy.designpatterns.factory.traditionnal.pizza;
+package com.hzy.designpattern.factory.traditionnal.pizza;
 
 public class PizzaCheese extends Pizza {
     public void prepare(String orderType) {

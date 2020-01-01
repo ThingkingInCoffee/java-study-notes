@@ -1,4 +1,4 @@
-package com.hzy.designpatterns.factory.traditionnal.order;
+package com.hzy.designpattern.factory.traditionnal.order;
 
 import com.hzy.designpatterns.factory.traditionnal.pizza.Pizza;
 import com.hzy.designpatterns.factory.traditionnal.pizza.PizzaCheese;

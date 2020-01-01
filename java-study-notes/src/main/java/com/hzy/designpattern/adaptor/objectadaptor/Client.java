@@ -1,4 +1,4 @@
-package com.hzy.designpatterns.adaptor.objectadaptor;
+package com.hzy.designpattern.adaptor.objectadaptor;
 
 /**
  * 对象适配器 客户端

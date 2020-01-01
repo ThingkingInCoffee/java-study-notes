@@ -1,4 +1,4 @@
-package com.hzy.designpatterns.decorator;
+package com.hzy.designpattern.decorator;
 
 import com.hzy.designpatterns.decorator.addition.Addition01;
 import com.hzy.designpatterns.decorator.addition.Addition02;

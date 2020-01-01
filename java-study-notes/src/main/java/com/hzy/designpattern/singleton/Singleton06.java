@@ -1,4 +1,4 @@
-package com.hzy.designpatterns.singleton;
+package com.hzy.designpattern.singleton;
 
 /**
  * 双重检查模式  锁代码块    线程安全   推荐

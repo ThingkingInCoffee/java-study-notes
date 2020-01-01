@@ -1,4 +1,4 @@
-package com.hzy.designpatterns.decorator;
+package com.hzy.designpattern.decorator;
 
 /**
  * 饮品类抽象类，用于继承、扩展

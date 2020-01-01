@@ -1,4 +1,4 @@
-package com.hzy.designpatterns.strategy;
+package com.hzy.designpattern.strategy;
 
 import com.hzy.designpatterns.strategy.duck.WildDuck;
 

@@ -1,4 +1,4 @@
-package com.hzy.designpatterns.singleton;
+package com.hzy.designpattern.singleton;
 
 /**
  * 枚举类方法

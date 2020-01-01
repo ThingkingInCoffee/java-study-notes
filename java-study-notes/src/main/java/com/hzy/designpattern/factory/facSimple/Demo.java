@@ -1,4 +1,4 @@
-package com.hzy.designpatterns.factory.facSimple;
+package com.hzy.designpattern.factory.facSimple;
 
 public class Demo {
 }

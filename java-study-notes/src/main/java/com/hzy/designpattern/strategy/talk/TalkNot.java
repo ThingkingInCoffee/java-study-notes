@@ -1,4 +1,4 @@
-package com.hzy.designpatterns.strategy.talk;
+package com.hzy.designpattern.strategy.talk;
 
 public class TalkNot implements TalkStrategy {
     @Override

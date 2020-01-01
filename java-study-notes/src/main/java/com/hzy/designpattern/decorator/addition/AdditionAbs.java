@@ -1,4 +1,4 @@
-package com.hzy.designpatterns.decorator.addition;
+package com.hzy.designpattern.decorator.addition;
 
 import com.hzy.designpatterns.decorator.Drink;
 

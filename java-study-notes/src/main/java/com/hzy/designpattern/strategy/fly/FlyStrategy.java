@@ -1,4 +1,4 @@
-package com.hzy.designpatterns.strategy.fly;
+package com.hzy.designpattern.strategy.fly;
 
 public interface FlyStrategy {
 

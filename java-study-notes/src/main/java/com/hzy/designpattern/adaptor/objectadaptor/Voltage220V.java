@@ -1,4 +1,4 @@
-package com.hzy.designpatterns.adaptor.objectadaptor;
+package com.hzy.designpattern.adaptor.objectadaptor;
 
 /**
  * 电源 220 V 输出

@@ -1,4 +1,4 @@
-package com.hzy.designpatterns.adaptor.interfaceadaptor;
+package com.hzy.designpattern.adaptor.interfaceadaptor;
 
 /**
  * 接口适配器模式

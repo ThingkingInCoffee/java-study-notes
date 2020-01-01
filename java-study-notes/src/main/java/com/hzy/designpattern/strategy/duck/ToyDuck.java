@@ -1,4 +1,4 @@
-package com.hzy.designpatterns.strategy.duck;
+package com.hzy.designpattern.strategy.duck;
 
 import com.hzy.designpatterns.strategy.fly.FlyNot;
 import com.hzy.designpatterns.strategy.talk.TalkNot;

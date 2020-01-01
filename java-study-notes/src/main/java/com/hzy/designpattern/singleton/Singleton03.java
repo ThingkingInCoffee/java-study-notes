@@ -1,4 +1,4 @@
-package com.hzy.designpatterns.singleton;
+package com.hzy.designpattern.singleton;
 
 /**
  * 懒汉模式 01  线程不安全

@@ -1,4 +1,4 @@
-package com.hzy.designpatterns.decorator.coffees;
+package com.hzy.designpattern.decorator.coffees;
 
 public class Coffee01 extends CoffeeAbs {
 

@@ -1,4 +1,4 @@
-package com.hzy.designpatterns.adaptor.interfaceadaptor;
+package com.hzy.designpattern.adaptor.interfaceadaptor;
 
 public class Client {
 

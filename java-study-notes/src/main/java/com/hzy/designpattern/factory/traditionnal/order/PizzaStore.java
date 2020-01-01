@@ -1,4 +1,4 @@
-package com.hzy.designpatterns.factory.traditionnal.order;
+package com.hzy.designpattern.factory.traditionnal.order;
 
 /**
  * 披萨店

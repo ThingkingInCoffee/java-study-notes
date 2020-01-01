@@ -1,4 +1,4 @@
-package com.hzy.designpatterns.proxy.dynamicproxy;
+package com.hzy.designpattern.proxy.dynamicproxy;
 
 
 public class TargetClass implements CommonInterface {

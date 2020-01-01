@@ -1,4 +1,4 @@
-package com.hzy.designpatterns.singleton;
+package com.hzy.designpattern.singleton;
 
 /**
  * 饿汉模式02  静态代码块

@@ -1,4 +1,4 @@
-package com.hzy.designpatterns.proxy.cglibproxy;
+package com.hzy.designpattern.proxy.cglibproxy;
 
 public class TargetClass {
 

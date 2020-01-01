@@ -1,4 +1,4 @@
-package com.hzy.designpatterns.proxy.staticproxy;
+package com.hzy.designpattern.proxy.staticproxy;
 
 public class ProxyClass implements CommonInterface {
 

@@ -1,4 +1,4 @@
-package com.hzy.designpatterns.adaptor.classadaptor;
+package com.hzy.designpattern.adaptor.classadaptor;
 
 /**
  * 类适配器 客户端

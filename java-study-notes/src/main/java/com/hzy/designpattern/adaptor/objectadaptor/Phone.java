@@ -1,4 +1,4 @@
-package com.hzy.designpatterns.adaptor.objectadaptor;
+package com.hzy.designpattern.adaptor.objectadaptor;
 
 /**
  * 充电的手机   充电方法

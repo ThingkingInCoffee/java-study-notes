@@ -1,4 +1,4 @@
-package com.hzy.designpatterns.factory.traditionnal.pizza;
+package com.hzy.designpattern.factory.traditionnal.pizza;
 
 public abstract class Pizza {
 
