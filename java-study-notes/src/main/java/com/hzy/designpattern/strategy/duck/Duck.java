@@ -1,7 +1,7 @@
 package com.hzy.designpattern.strategy.duck;
 
-import com.hzy.designpatterns.strategy.fly.FlyStrategy;
-import com.hzy.designpatterns.strategy.talk.TalkStrategy;
+import com.hzy.designpattern.strategy.fly.FlyStrategy;
+import com.hzy.designpattern.strategy.talk.TalkStrategy;
 
 public abstract class Duck {
 

@@ -1,8 +1,8 @@
 package com.hzy.designpattern.factory.traditionnal.order;
 
-import com.hzy.designpatterns.factory.traditionnal.pizza.Pizza;
-import com.hzy.designpatterns.factory.traditionnal.pizza.PizzaCheese;
-import com.hzy.designpatterns.factory.traditionnal.pizza.PizzaPig;
+import com.hzy.designpattern.factory.traditionnal.pizza.Pizza;
+import com.hzy.designpattern.factory.traditionnal.pizza.PizzaCheese;
+import com.hzy.designpattern.factory.traditionnal.pizza.PizzaPig;
 
 import java.io.BufferedReader;
 import java.io.IOException;

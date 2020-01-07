@@ -1,8 +1,8 @@
 package com.hzy.designpattern.decorator;
 
-import com.hzy.designpatterns.decorator.addition.Addition01;
-import com.hzy.designpatterns.decorator.addition.Addition02;
-import com.hzy.designpatterns.decorator.coffees.Coffee01;
+import com.hzy.designpattern.decorator.addition.Addition01;
+import com.hzy.designpattern.decorator.addition.Addition02;
+import com.hzy.designpattern.decorator.coffees.Coffee01;
 
 public class CoffeeBar {
 

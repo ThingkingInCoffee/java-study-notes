@@ -1,6 +1,6 @@
 package com.hzy.designpattern.decorator.coffees;
 
-import com.hzy.designpatterns.decorator.Drink;
+import com.hzy.designpattern.decorator.Drink;
 
 /**
  * 咖啡抽象类   饮品类的一种

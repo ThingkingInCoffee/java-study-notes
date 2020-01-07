@@ -1,6 +1,6 @@
 package com.hzy.designpattern.strategy;
 
-import com.hzy.designpatterns.strategy.duck.WildDuck;
+import com.hzy.designpattern.strategy.duck.WildDuck;
 
 public class Client {
 

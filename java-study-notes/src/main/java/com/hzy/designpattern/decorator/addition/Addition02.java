@@ -1,6 +1,6 @@
 package com.hzy.designpattern.decorator.addition;
 
-import com.hzy.designpatterns.decorator.Drink;
+import com.hzy.designpattern.decorator.Drink;
 
 public class Addition02 extends AdditionAbs {
     public Addition02(Drink drink) {

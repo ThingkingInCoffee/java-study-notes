@@ -1,7 +1,7 @@
 package com.hzy.designpattern.strategy.duck;
 
-import com.hzy.designpatterns.strategy.fly.FlyBad;
-import com.hzy.designpatterns.strategy.talk.TalkGege;
+import com.hzy.designpattern.strategy.fly.FlyBad;
+import com.hzy.designpattern.strategy.talk.TalkGege;
 
 public class LocalDuck extends Duck {
 
