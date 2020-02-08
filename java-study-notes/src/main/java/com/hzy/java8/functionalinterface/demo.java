@@ -6,16 +6,16 @@ import java.util.function.Consumer;
 
 /**
  * java8 提供了 4大核心函数是接口
- * <p>
+ *
  * Consumer<T>  消费型接口
  * void accept(T t);
- * <p>
+ *
  * Supplier<T>  供给型接口
  * T get();
- * <p>
+ *
  * Function<T, R>  函数型接口
  * R apply(T t);
- * <p>
+ *
  * Predicate<T>  断言型接口
  * boolean test(T t);
  */
