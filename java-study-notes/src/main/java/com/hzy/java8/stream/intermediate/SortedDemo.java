@@ -4,8 +4,9 @@ import com.hzy.java8.functionalinterface.User;
 import org.junit.Test;
 import sun.text.normalizer.UTF16;
 
-import java.util.Arrays;
-import java.util.List;
+import java.text.SimpleDateFormat;
+import java.util.*;
+import java.util.stream.Collectors;
 
 /**
  *  排序
@@ -13,6 +14,7 @@ import java.util.List;
  *  sorted(Comparator)  --  定制排序
  */
 public class SortedDemo {
+    SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
 
     List<User> users = Arrays.asList(
             new User("张三", 19, 165150.63),
@@ -26,8 +28,14 @@ public class SortedDemo {
             "aaa","ddd","eee","bbb","ccc","fff"
     );
 
+    List<String> dates = Arrays.asList(
+
+            "2020-01-01", "2020-02-01", "2020-03-01", "2020-04-01", "2020-05-01", "2020-05-01"
+    );
+
     @Test
     public void testSorted () {
+
         //自然排序
         strings.stream().sorted().forEach(System.out::println);
         System.out.println("=========================");
@@ -39,6 +47,21 @@ public class SortedDemo {
                 return -user1.getAge().compareTo(user2.getAge());
             }
         }).forEach(System.out::println);
+    }
+
+    @Test
+    public void testDate() throws InterruptedException {
+        Date date01 = new Date();
+        Thread.sleep(2000);
+        Date date02 = new Date();
+        List<Date> list = new ArrayList<>();
+        list.add(date01);
+        list.add(date02);
+        list.stream().sorted().forEach(x -> {
+            String s = sdf.format(x);
+            System.out.println(s);
+        });
+
     }
 
 }
