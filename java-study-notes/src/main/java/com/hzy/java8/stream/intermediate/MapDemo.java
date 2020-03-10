@@ -3,6 +3,7 @@ package com.hzy.java8.stream.intermediate;
 import com.hzy.java8.functionalinterface.User;
 import org.junit.Test;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -46,6 +47,26 @@ public class MapDemo {
                 map(n -> n * n).
                 collect(Collectors.toList());
         squareNums.forEach(System.out::println);
+    }
+
+    @Test
+    public void test001() {
+        List<String> list = new ArrayList<>();
+        List<User> collect = users.stream().map(x -> {
+            if (x.getAge() > 20) {
+                list.add(x.getName());
+                x.setAge(x.getAge() + 100);
+            }
+            return x;
+        }).collect(Collectors.toList());
+
+        for (String s : list) {
+            System.out.println(s);
+        }
+
+        for (User user : collect) {
+            System.out.println(user.getAge());
+        }
     }
 
 
