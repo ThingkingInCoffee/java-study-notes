@@ -16,7 +16,7 @@ public class TuoMinDemo {
         System.out.println("脱敏后： " + phone);
 
 
-        String address = "啊实打实打算v阿飞隔热如果人噶热".replaceAll("(^\\S)[\\S]*", "$1******");
+        String address = "啊实打实打算v阿飞隔热如果人噶热".replaceAll("(^\\S)[\\S]*$", "$1******");
         System.out.println(address);
     }
 
