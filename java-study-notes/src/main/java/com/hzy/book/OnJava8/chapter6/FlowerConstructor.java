@@ -24,7 +24,7 @@ public class FlowerConstructor {
         this(petals);
         //- this(s); // Can't call two!
         this.s = s; // Another use of "this"
-        System.out.println("String & int args");
+        System.out.println("string & int args");
     }
 
     FlowerConstructor() {

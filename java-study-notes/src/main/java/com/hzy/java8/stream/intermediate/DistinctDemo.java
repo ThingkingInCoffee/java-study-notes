@@ -17,7 +17,7 @@ public class DistinctDemo {
             new User("张三", 19, 165150.63),
             new User("李四", 29, 265150.63),
             new User("王五", 39, 365150.63),
-            new User("王五", 39, 365150.63),
+            new User("王五", 37, 365150.63),
             new User("王五", 39, 365150.63),
             new User("马六", 49, 465150.63),
             new User("赵七", 59, 565150.63)
