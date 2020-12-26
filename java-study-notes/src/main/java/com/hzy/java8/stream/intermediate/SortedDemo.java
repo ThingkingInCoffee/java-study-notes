@@ -2,10 +2,12 @@ package com.hzy.java8.stream.intermediate;
 
 import com.hzy.java8.functionalinterface.User;
 import org.junit.Test;
-import sun.text.normalizer.UTF16;
 
 import java.text.SimpleDateFormat;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Date;
+import java.util.List;
 import java.util.stream.Collectors;
 
 /**
@@ -26,6 +28,10 @@ public class SortedDemo {
 
     List<String> strings = Arrays.asList(
             "aaa","ddd","eee","bbb","ccc","fff"
+    );
+
+    List<Integer> integers = Arrays.asList(
+            1,4,5,8,35,245,23424
     );
 
     List<String> dates = Arrays.asList(
@@ -62,6 +68,12 @@ public class SortedDemo {
             System.out.println(s);
         });
 
+    }
+
+    @Test
+    public void testInteger(){
+        List<Integer> collect = integers.stream().sorted().collect(Collectors.toList());
+        System.out.println(collect);
     }
 
 }

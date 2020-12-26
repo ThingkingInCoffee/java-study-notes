@@ -24,14 +24,14 @@ public class ParallelDemo {
         System.out.println(strings.size());
 
 //        ForkJoinPool pool = new ForkJoinPool();
-//        Future<List<String>> s = pool.submit(() -> {
+//        Future<List<string>> s = pool.submit(() -> {
 //            list.parallelStream().map(s -> {
 //                System.out.println("线程名称==" + Thread.currentThread().getName());
 //                return s + "sss";
 //            }).collect(Collectors.toList());
 //        });
 //        try {
-//            List<String> test = s.get();
+//            List<string> test = s.get();
 //            System.out.println(test.size());
 //        } catch (InterruptedException e) {
 //            e.printStackTrace();

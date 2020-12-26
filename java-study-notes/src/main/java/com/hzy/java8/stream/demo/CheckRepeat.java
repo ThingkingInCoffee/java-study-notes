@@ -34,7 +34,11 @@ public class CheckRepeat {
 
     @Test
     public void test01(){
-
+        users.stream().forEach(x-> {
+            if (x.getAge() == 39) {
+                return;
+            }
+        });
     }
 
 
