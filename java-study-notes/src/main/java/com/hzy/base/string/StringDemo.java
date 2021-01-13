@@ -13,6 +13,10 @@ public class StringDemo {
         String countString = "1.979";
         int count = new BigDecimal(countString).intValue();
         System.out.println(count);
+        Integer n = new Integer(133);
+        System.out.println("133".equals(n));
+        System.out.println(n.equals(133));
+        System.out.println(n==133);
     }
 
 
