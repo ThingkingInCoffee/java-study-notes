@@ -17,6 +17,8 @@ public class StringDemo {
         System.out.println("133".equals(n));
         System.out.println(n.equals(133));
         System.out.println(n==133);
+        Integer m = new Integer(133);
+        System.out.println(m.equals(n));
     }
 
 
