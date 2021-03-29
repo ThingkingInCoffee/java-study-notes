@@ -34,8 +34,28 @@ public class HashMapDemo {
     public void testPutMapEntries() {
         Map<String, String> map = new HashMap<>();
         map.put("test", "test");
+        String s = map.get("test");
+        for (Map.Entry<String, String> entry : map.entrySet()) {
+            System.out.println(entry.getKey() + " ======= " + entry.getValue());
+        }
         Map<String, String> mapNew = new HashMap<>(map);
         System.out.println(mapNew);
+    }
+
+    @Test
+    public void testGetHash() {
+        int key = 1423412234;
+        int hash = testGetHash(key);
+        int i = (16 - 1) & hash;
+        System.out.println(i);
+    }
+
+
+
+
+    public int testGetHash(Integer key) {
+        int h;
+        return (key == null) ? 0 : (h = key.hashCode()) ^ (h >>> 16);
     }
 
 
