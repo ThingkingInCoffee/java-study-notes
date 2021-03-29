@@ -11,6 +11,9 @@ public class BigDecimalDemo {
         System.out.println(result1.toString());
         int compare1 = result1.compareTo(new BigDecimal("4.72"));
         System.out.println(compare1); // 4.725474 > 4.72  --> 1
+        BigDecimal b12 = new BigDecimal(12);
+        BigDecimal b10 = new BigDecimal("10");
+        System.out.println(b10.multiply(b12));
     }
 
 }

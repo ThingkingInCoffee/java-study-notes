@@ -8,6 +8,9 @@ public class StringToArray {
         for (String s : splitArray) {
             System.out.println("====="+s+"=====");
         }
+
+        System.out.println(1<<30);
+        System.out.println(1<<4);
     }
 
 }
