@@ -93,10 +93,4 @@ class ArrayQueue {
     }
 }
 
-/**
- * 解决数组队列复用问题
- *
- */
-class ArrayQueueCycle {
 
-}
