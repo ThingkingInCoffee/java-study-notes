@@ -28,6 +28,13 @@ public class SingleLinkedListDemo {
         linkedListOrder.addNodeOrder(node03);
         linkedListOrder.addNodeOrder(node04);
         linkedListOrder.list();
+
+        linkedListOrder.updateNode(new LinkedNode(3, "modifyName"));
+        linkedListOrder.list();
+
+        linkedListOrder.deleteNode(6);
+        linkedListOrder.list();
+
     }
 
 
@@ -39,6 +46,14 @@ public class SingleLinkedListDemo {
 class SingleLinkedList {
     // 头结点
     private LinkedNode head = new LinkedNode(0, "");
+
+    public LinkedNode getHead() {
+        return head;
+    }
+
+    public void setHead(LinkedNode head) {
+        this.head = head;
+    }
 
     /**
      * 添加节点
@@ -104,6 +119,70 @@ class SingleLinkedList {
         // 当前节点后一个指向新增
         temp.next = node;
     }
+
+    /**
+     * 更新节点
+     *
+     * @param updateNode
+     */
+    public void updateNode(LinkedNode updateNode) {
+        if (head.next == null) {
+            System.out.println("空了");
+            return;
+        }
+        LinkedNode temp = head.next;
+        boolean isFund = false;
+        // 遍历找数据
+        while (true) {
+            if (temp == null) {
+                break;
+            }
+            if (temp.code == updateNode.code) {
+                isFund = true;
+                break;
+            }
+            temp = temp.next;
+        }
+        if (isFund) {
+            temp.name = updateNode.name;
+            System.out.println("更换属性值");
+            return;
+        } else {
+            System.out.println("遍历到末尾，未找到");
+        }
+    }
+
+    /**
+     * 删除节点
+     *
+     * @param code
+     */
+    public void deleteNode(int code) {
+        if (head.next == null) {
+            System.out.println("已经空了");
+        }
+        LinkedNode temp = head.next;
+        // 是否找到要删除的节点的前一个节点
+        boolean isFundPre = false;
+        while (true) {
+            if (temp == null){
+                System.out.println("遍历完了");
+                break;
+            }
+            if (temp.next.code == code){
+                isFundPre = true;
+                break;
+            }
+            temp = temp.next;
+        }
+        if (isFundPre) {
+            System.out.printf("找到了目标前一个节点, 移除节点 %d \n", code);
+            temp.next = temp.next.next;
+        } else {
+            System.out.println("未找到要删除的节点");
+        }
+    }
+
 
     /**
      * 遍历节点
