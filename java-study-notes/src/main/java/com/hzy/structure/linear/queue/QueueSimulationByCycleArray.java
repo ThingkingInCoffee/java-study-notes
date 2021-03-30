@@ -2,8 +2,48 @@ package com.hzy.structure.linear.queue;
 
 public class QueueSimulationByCycleArray {
 
+    public static void main(String[] args) {
+        testArrayDemo();
+    }
+
+    /**
+     * 建单队列demo
+     */
+    public static void testArrayDemo() {
+        ArrayQueueCycle queue = new ArrayQueueCycle(5);
+        queue.addElement(1);
+        queue.addElement(2);
+        queue.addElement(3);
+        queue.addElement(4);
+        queue.addElement(5);  // 队列已满
+        queue.addElement(6);  // 队列已满
+        queue.addElement(7);  // 队列已满
+
+        queue.show();
+
+        queue.getElement();
+        queue.getElement();
+        queue.getElement();
+        queue.getElement();
+//        queue.getElement(); // 队列已空
+
+        System.out.println("+++++++重新插入数据++++++++");
+        queue.addElement(1);
+        queue.addElement(2);
+        queue.addElement(3);
+        queue.addElement(4);
+
+        queue.getElement();
+        queue.getElement();
+
+        queue.addElement(5);
+        queue.addElement(6);
+
+        queue.show();
+    }
 
 }
+
 
 /**
  * 解决数组队列复用问题 此版本预留一个空间用于判断
@@ -42,9 +82,11 @@ class ArrayQueueCycle {
     public void addElement(int ele) {
         if (isFull()) {
             System.out.println("满了");
+            return;
         }
         arr[rear] = ele;
         rear = (rear + 1) % maxSize;
+        System.out.println("添加元素 " + ele);
     }
 
     public int getElement() {
@@ -53,6 +95,7 @@ class ArrayQueueCycle {
         }
         int i = arr[front++];
         front = front % maxSize;
+        System.out.println("获取数据 " + i);
         return i;
     }
 
@@ -60,13 +103,20 @@ class ArrayQueueCycle {
         if (isEmpty()) {
             throw new RuntimeException("空了");
         }
+        System.out.print("展示队列数据：");
         for (int i = front; i < front + getSize(); i++) {
-            System.out.println(arr[i % maxSize]);
+            System.out.print(arr[i % maxSize] + " ");
         }
+        System.out.println();
     }
 
+
+
     private int getSize() {
-        return (maxSize - front + rear);
+        // rear - front 是有效数，
+        // 该值可能为负数，则 +maxSize 补正
+        // 该值可能为正，则 +maxSize 后取余平衡
+        return (rear - front + maxSize) % maxSize;
     }
 
 
