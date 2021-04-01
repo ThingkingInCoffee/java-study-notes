@@ -21,6 +21,15 @@ public class DoubleLinkedListDemo {
         list.listDouble();
         list.updateDoubleNode(new DoubleLinkedNode(4, "30044"));
         list.listDouble();
+        System.out.println("===========测试顺序添加=========");
+        DoubleLinkedList list2 = new DoubleLinkedList();
+        list2.addDoubleNodeOrder(new DoubleLinkedNode(2, "3002"));
+        list2.addDoubleNodeOrder(new DoubleLinkedNode(7, "3007"));
+        list2.addDoubleNodeOrder(new DoubleLinkedNode(1, "3001"));
+        list2.addDoubleNodeOrder(new DoubleLinkedNode(9, "3009"));
+        list2.addDoubleNodeOrder(new DoubleLinkedNode(6, "3006"));
+        list2.addDoubleNodeOrder(new DoubleLinkedNode(4, "3004"));
+        list2.listDouble();
     }
 
 }
@@ -52,6 +61,30 @@ class DoubleLinkedList {
         temp.next = node;
         node.pre = temp;
         System.out.println("添加节点 " + node);
+    }
+
+    /**
+     * 插入新的节点，并将链表自动排序
+     *
+     * @param newNode
+     */
+    public void addDoubleNodeOrder(DoubleLinkedNode newNode) {
+        System.out.println("传入" + newNode.code);
+        DoubleLinkedNode temp = head;
+        while (true) {
+            if (temp.next == null) {
+                System.out.println("已经是末尾了");
+                break;
+            } else if (temp.next.code > newNode.code) {
+                // 找到大于当前节点值得节点
+                System.out.println("找到中间空隙");
+                break;
+            }
+            temp = temp.next;
+        }
+        newNode.next = temp.next;
+        newNode.pre = temp;
+        temp.next = newNode;
     }
 
     /**
