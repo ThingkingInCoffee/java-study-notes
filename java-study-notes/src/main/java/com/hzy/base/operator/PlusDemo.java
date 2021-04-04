@@ -11,6 +11,13 @@ public class PlusDemo {
         System.out.println(m--);
         int n = 1;
         System.out.println(--n);
+        int index = 0;
+        String s = "testString";
+        while (index <= s.length() - 1) {
+            String subString = s.substring(index++, index);
+            System.out.println(subString);
+        }
+
     }
 
 }

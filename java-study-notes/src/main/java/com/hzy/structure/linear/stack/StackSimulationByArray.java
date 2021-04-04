@@ -27,8 +27,8 @@ public class StackSimulationByArray {
 }
 
 class ArrayStack {
-    private int maxSize; // 最大值
-    private int[] stack;  // 存储数据
+    private final int maxSize; // 最大值
+    private final int[] stack;  // 存储数据
     private int top = -1;  //栈顶指针，默认初始-1
 
     public ArrayStack(int maxSize) {
@@ -53,13 +53,17 @@ class ArrayStack {
         System.out.println("插入数据" + insertValue);
     }
 
-    public void pop() {
+    public int peek(){
+        return stack[top];
+    }
+
+    public int pop() {
         if (isEmpty()) {
-            System.out.println("空了");
-            return;
+            throw new RuntimeException("空了");
         }
         int topValue = stack[top--];
         System.out.println("取出数据-----" + topValue);
+        return topValue;
     }
 
     /**
