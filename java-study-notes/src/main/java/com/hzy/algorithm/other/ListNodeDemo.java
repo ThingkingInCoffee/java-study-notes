@@ -21,9 +21,12 @@ public class ListNodeDemo {
         dumy.next = head;
         ListNode first = dumy;
         ListNode second = dumy;
+        // 两个链表起点相同，先移动第一个链表 n 个位置产生差额
         for (int i = 0; i < n; i++) {
             first = first.next;
         }
+        // 再同时移动两个链表，则第二个链表落后第一个链表 N 个节点到达末尾，
+        // 即一链到达末尾时，二链到达倒数N位置
         while(first != null){
             first = first.next;
             second = second.next;
