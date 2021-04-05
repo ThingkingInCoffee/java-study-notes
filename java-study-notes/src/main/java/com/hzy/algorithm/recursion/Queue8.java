@@ -1,6 +1,7 @@
 package com.hzy.algorithm.recursion;
 
 /**
+ * 递归回溯
  * 八皇后问题
  */
 public class Queue8 {
