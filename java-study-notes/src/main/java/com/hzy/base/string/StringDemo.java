@@ -21,6 +21,8 @@ public class StringDemo {
         System.out.println(n == 133);
         Integer m = new Integer(133);
         System.out.println(m.equals(n));
+        String numString = "1";
+        System.out.println(numString.equals(1));
     }
 
     @Test
