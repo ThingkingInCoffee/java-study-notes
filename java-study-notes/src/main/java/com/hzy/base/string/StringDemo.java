@@ -23,6 +23,9 @@ public class StringDemo {
         System.out.println(m.equals(n));
         String numString = "1";
         System.out.println(numString.equals(1));
+
+        // Integer nullInteger = null;
+        // System.out.println(99 != nullInteger);  // 空指针异常
     }
 
     @Test

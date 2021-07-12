@@ -22,7 +22,7 @@ public class ListDemo {
         list1.add("2");
         boolean b = list.containsAll(list1);
         System.out.println(b);
-
+        System.out.println("++++++++++++++++++++++++++++++");
         List<String> list2 = new ArrayList<>();
         list2.add("1");
         list2.add("20");
@@ -30,6 +30,10 @@ public class ListDemo {
         System.out.println(b2);
 
         list.remove(0);
+        System.out.println(list);
+        System.out.println("++++++++++++++++++++++++++++++");
+        List<String> listCopy = list;
+        listCopy.add("66666666");
         System.out.println(list);
     }
 
