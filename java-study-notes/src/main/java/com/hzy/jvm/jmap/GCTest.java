@@ -13,7 +13,7 @@ public class GCTest {
         for (int i = 0; i < 10000; i++) {
             byte[] arr = new byte[1024 * 100];
             list.add(arr);
-            Thread.sleep(60);
+            Thread.sleep(200);
             System.out.println("第" + i + "轮");
         }
     }
