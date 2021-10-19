@@ -10,6 +10,7 @@ public class StringDemo {
 
     @Test
     public void test01() {
+        System.out.println(new Integer(1024) == 1024);
         System.out.println("2".equals(Integer.toString(2)));
         System.out.println(new Integer(2).equals("2"));
         String countString = "1.979";
