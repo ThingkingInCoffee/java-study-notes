@@ -27,6 +27,13 @@ public class StringDemo {
 
         // Integer nullInteger = null;
         // System.out.println(99 != nullInteger);  // 空指针异常
+        System.out.println("==============");
+        String a = "a";
+        String b = new String("a").intern();
+        String c = new String("a");
+        System.out.println("a = b --- " + (a == b));
+        System.out.println("a = c --- " + (a == c));
+        System.out.println(new String("a").intern());
     }
 
     @Test

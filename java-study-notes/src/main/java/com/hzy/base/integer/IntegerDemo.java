@@ -15,6 +15,33 @@ public class IntegerDemo {
         System.out.println(b == bb3);
         Integer aa2 = 1000;
         System.out.println(a == aa2);
+
+        User sysUser = new User();
+        sysUser.setName("test");
+        Long aLong = Long.valueOf(sysUser.getId() == null ? 0 : sysUser.getId());
+        System.out.println(aLong);
+
+    }
+
+    static class User {
+        private Integer id;
+        private String name;
+
+        public Integer getId() {
+            return id;
+        }
+
+        public void setId(Integer id) {
+            this.id = id;
+        }
+
+        public String getName() {
+            return name;
+        }
+
+        public void setName(String name) {
+            this.name = name;
+        }
     }
 
 
