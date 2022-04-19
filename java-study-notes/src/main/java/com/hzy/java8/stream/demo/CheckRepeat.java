@@ -41,5 +41,13 @@ public class CheckRepeat {
         });
     }
 
+    @Test
+    public void test03(){
+        users.stream().map(u-> {
+            System.out.println(u.getName());
+            return u.getName();
+        }).collect(Collectors.toList());
+    }
+
 
 }
