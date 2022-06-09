@@ -15,13 +15,16 @@ public class IntegerDemo {
         System.out.println(b == bb3);
         Integer aa2 = 1000;
         System.out.println(a == aa2);
-        System.out.println( "aa2.equals(1000) = "+ aa2.equals(1000));
+        System.out.println("aa2.equals(1000) = " + aa2.equals(1000));
 
         User sysUser = new User();
         sysUser.setName("test");
         Long aLong = Long.valueOf(sysUser.getId() == null ? 0 : sysUser.getId());
         System.out.println(aLong);
         System.out.println(new Integer(1).equals("1"));
+
+        System.out.println("aa2.equals(null)" + aa2.equals(null));
+        ;
 
     }
 
