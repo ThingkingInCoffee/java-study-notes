@@ -45,6 +45,11 @@ public class StringDemo {
         for (Integer integerNum : list) {
             System.out.println("142341234:" + integerNum + ":test");
         }
+
+        String str = "-30";
+        final String[] split = str.split("-");
+        System.out.println(split.length);
+        System.out.println("["+split[0]+"]");
     }
 
 

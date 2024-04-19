@@ -1,5 +1,11 @@
 package com.hzy.base.integer;
 
+import cn.hutool.core.date.DateUnit;
+import cn.hutool.core.date.DateUtil;
+
+import java.util.HashMap;
+import java.util.Map;
+
 public class IntegerDemo {
 
     public static void main(String[] args) {
@@ -24,8 +30,19 @@ public class IntegerDemo {
         System.out.println(new Integer(1).equals("1"));
 
         System.out.println("aa2.equals(null)" + aa2.equals(null));
-        ;
+        Integer x = new Integer(10);
+        Integer y = null;
+        if (x.equals(y)) {
+            System.out.println("a and b are equal");
+        } else {
+            System.out.println("a and b are not equal");
+        }
+        System.out.println("1".equals(null));
+        Map<Integer, String> map = new HashMap<>();
+        map.put(new Integer(1111), "1234");
+        System.out.println(map.get(1111L));
 
+        System.out.println(DateUtil.between(DateUtil.parse("2023-09-13 00:00:00"), DateUtil.parse("2023-09-14 23:59:59"), DateUnit.DAY) + 1);
     }
 
     static class User {

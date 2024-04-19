@@ -27,10 +27,17 @@ public class CreateDemo {
         Stream<String> stream1 = Arrays.stream(strings); //方式二
 
         //通过 stream 类中的静态方法  of() 方法
-        Stream<String> stream2 = Stream.of("qwer","asdf","hdfghdgf"); //方式三
-
+        Stream<String> stream2 = Stream.of("qwer", "asdf", "hdfghdgf"); //方式三
+        stream2.forEach(
+                e -> {
+                    if ("asdf".equals(e)) {
+                        return;
+                    }
+                    System.out.println("000"+e);
+                }
+        );
         //创建 无限流
-        Stream<Integer> stream3 = Stream.iterate(0,(x) -> x + 2);
+        Stream<Integer> stream3 = Stream.iterate(0, (x) -> x + 2);
         stream3.limit(10).forEach(System.out::println);  //方式四
 
         Stream<Double> generate = Stream.generate(() -> Math.random());
